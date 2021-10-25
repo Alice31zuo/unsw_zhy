@@ -1,0 +1,47 @@
+3 4 2    1 6 b 5
+3 d 5 6 d 4 3
+start: 3 4 2 1 6 b 5
+goal: 3 d 5 6 d 4 3
+unsolvable
+x
+
+1 2 3 b
+3 2 1 b
+start: 1 2 3 b
+goal: 3 2 1 b
+input error
+
+
+start: 1 2      3               1
+goal: 1 2 3 b
+solvable
+
+start:   1        4  b           2   7           6     5          3    8
+goal: 4                  3               7       6               5       b   2                   8               1
+input error
+solclear
+
+start:  b         22             1        15  6         9   5           16               21       12   11                 17  24 19     18       4               13     3                20     10  23        8               14   2    7
+goal:   10        3             22  8           19     5   4     2               1       21   13          20    18     14         16     24               12      17            11               9    6                7       23             b                15
+input error
+sol
+
+
+start:   10               6      19   24 28  3   18               35              17  7          5                26     27             16               8                25  13                29   b                31   30                  14     9    1                  2                20              34   23                22             33  12  15      32   4   11              21
+goal: 21                 16   10                 18     1   6     29              33 15 7                2               11      28     34  b            23     3       30        5              14   31             12   32         19               25       9      20       24   4         35       22            13  27            17     8 26
+input error
+
+
+start:  11   9  26        10     7       6   b 3          4       2   5 8         12    14  13   1
+goal:   6         b       13     5   1    26     2  12           9      14        3     7       8        10       4  11
+input error
+
+
+start:   1        4  b           2   7           6     5          3    8
+goal: 4                  3               7       6               5       b   2                   8               1
+input error
+
+
+start:  b         22             1        15  6         9   5           16               21       12   11                 17  24 19     18       4               13     3                20     10  23        8               14   2    7
+goal:   10        3             22  8           19     5   4     2               1       21   13          20    18     14         16     24               12      17            11               9    6                7       23             b                15
+input error

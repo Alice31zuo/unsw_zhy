@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alice/CLionProjects/9024_ass1/boardADT.c
+boardADT.h
+/Users/alice/CLionProjects/9024_ass1/boardADT.h
+
+/Users/alice/CLionProjects/9024_ass1/boardADT.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+string.h
+-
+stdbool.h
+-
+ctype.h
+-
+
+/Users/alice/CLionProjects/9024_ass1/puzzle.c
+boardADT.h
+/Users/alice/CLionProjects/9024_ass1/boardADT.h
+
