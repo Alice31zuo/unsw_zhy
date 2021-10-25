@@ -1,0 +1,11 @@
+.questionCardcontainer {
+  margin :20px;
+}
+
+.questionCardmain {
+  background-color: rgba(152, 250, 237, 0.8);
+}
+
+.questionCardbuttonmain {
+  background-color: rgba(84, 201, 247, 0.8);
+}

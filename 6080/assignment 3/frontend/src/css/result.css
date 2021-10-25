@@ -1,0 +1,24 @@
+.resultContainer {
+  width: 100%;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  justify-items: center;
+  align-items: start;
+  background-image: linear-gradient(#64e6d0, #ffa75e);
+}
+
+.resultArea {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin : 10px;
+  display: flex;
+  flex-direction: column;
+}
+.charcontainer {
+  min-width: 400px;
+}
+
+.resultword {
+  color: #f7731b;
+}

@@ -1,0 +1,23 @@
+.gameCardcontainer {
+  margin :20px;
+}
+
+.gameCardmain {
+  background-color: rgba(250, 248, 152, 0.8);
+}
+
+.gameCardbuttonmain {
+  background-color: rgba(247, 194, 109, 0.8);
+}
+
+.gameCardPOpUp {
+  display:flex;
+  flex-direction: column;
+  padding : 20px;
+  position: absolute;
+  width: 450px;
+  height: auto;
+  background-color: #8ac1ee;
+  /* border: #57adf3; */
+  border-radius: 10px;
+}

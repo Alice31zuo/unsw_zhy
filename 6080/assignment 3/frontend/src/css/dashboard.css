@@ -1,0 +1,41 @@
+.dashboardContainer {
+  width: 100%;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  /* grid-template-rows: 1fr 2fr 2fr; */
+  justify-items: stretch;
+  align-items: start;
+  background-image: linear-gradient(#64e6db, #ffc15e);
+}
+
+.dashboardGameArea {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.dashboardGameCardArea {
+  margin : 20px;
+}
+.dashboardGameButtonArea {
+  margin : 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.dashboardPOpUp {
+  display:flex;
+  flex-direction: column;
+  padding : 20px;
+  position: absolute;
+  width: 400px;
+  height: auto;
+  background-color: #8ac1ee;
+  border-radius: 10px;
+}
+.dashboardPOpUpelement {
+  padding:10px;
+}
+
+.dashboardPOpUpinput {
+  width: 300px;
+}

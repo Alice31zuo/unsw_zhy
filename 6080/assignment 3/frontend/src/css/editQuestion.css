@@ -1,0 +1,54 @@
+.editGameContainer {
+  width: 100%;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+  justify-items: center;
+  align-items: center;
+  background-image: linear-gradient( #ffc15e, #64e6db);
+}
+.editGameContentContainer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+}
+.editGameContentContainerContent {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 40px;
+}
+
+.editGameElementcontainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.editGameElementword {
+  width: 100px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.editGameElementinput {
+  width: 300px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.editGameInputtextfied {
+  width: 200px ;
+}
+
+.editGamebuttonfield {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+
+

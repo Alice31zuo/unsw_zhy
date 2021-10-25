@@ -1,0 +1,7 @@
+.barcontainer {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(#64cce6, #9c5eff);
+  align-items: center;
+  justify-items: center;
+}

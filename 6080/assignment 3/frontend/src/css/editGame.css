@@ -1,0 +1,46 @@
+.editGameContainer {
+  width: 100%;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-rows: 1fr 10fr;
+  justify-items: stretch;
+  align-items: start;
+  background-image: linear-gradient(#64e6db, #ffc15e);
+}
+
+.editGameArea {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:2;
+  margin : 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quesitonCardArea {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  margin : 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.editGameinputelement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.editGamewordelement {
+  width: 30px ;
+  height: 30px;
+}
+
+.editGameInputtextfied {
+  width: 230px ;
+  margin: 5px;
+}
