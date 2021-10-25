@@ -1,0 +1,140 @@
+
+%%student%% 5196480
+Schema Related to People (out of 3.0):2.9
+Schema Related to Events (out of 4.0):3.8
+Schema Related to Tickets (out of 2.0):1.9
+Miscellaneous Schema Elements (out of 1.0):0.8
+StuTotal:9.4
+
+%%testing%%
+===============================
+Notes from auto-checking schema
+===============================
+
+
+Checking table "attended"
+ - found foreign key reference to people
+ - found foreign key reference to events
+ - found all primary key attributes
+
+Checking table "contactlists"
+ - found NOT NULL foreign key reference to users
+ - found NOT NULL attribute with type string
+ - found primary key
+
+Checking table "dailyevents"
+ - found foreign key reference to repeatingevents
+ - found attribute with name frequency
+ - found all primary key attributes
+
+Checking table "eventinfo"
+ - found NOT NULL foreign key reference to organisers
+ - found NOT NULL foreign key reference to places
+ - found NOT NULL foreign key reference to pagecolours
+ - found attribute with type string, but missing NOT NULL
+ - found attribute with type boolean, but missing NOT NULL
+ - no attribute with type time
+ - found attribute with type interval
+ - found primary key
+
+Checking table "eventinfocategories" (aka "categories")
+ - found foreign key reference to eventinfo
+ - found attribute with type string
+ - found all primary key attributes
+
+Checking table "events"
+ - found NOT NULL foreign key reference to eventinfo
+ - missing foreign key reference to repeatingevents
+ - found attribute with type date
+ - no attribute with type time
+ - found primary key
+
+Checking table "instanceof"
+ - unknown table: instanceof
+
+Checking table "invitedto"
+ - found foreign key reference to people
+ - found foreign key reference to events
+ - found all primary key attributes
+
+Checking table "memberof"
+ - found foreign key reference to contactlists
+ - found foreign key reference to people
+ - found attribute with type string
+ - found all primary key attributes
+
+Checking table "monthlybydateevents"
+ - found foreign key reference to repeatingevents
+ - found attribute with name dateinmonth
+ - found all primary key attributes
+
+Checking table "monthlybydayevents" (aka "monthlybydateevents")
+ - found foreign key reference to repeatingevents
+ - found attribute with name dateinmonth
+ - found all primary key attributes
+
+Checking table "organisers"
+ - found NOT NULL foreign key reference to users
+ - found NOT NULL foreign key reference to pagecolours
+ - found attribute with type string, but missing NOT NULL
+ - found attribute with type bytea
+ - found primary key
+
+Checking table "pagecolours"
+ - found foreign key reference to users
+ - found attribute with type string, but missing NOT NULL
+ - found attribute with type boolean, but missing NOT NULL
+ - found attribute with type colourvalue, but missing NOT NULL
+ - found attribute with name links
+ - found primary key
+
+Checking table "people"
+ - found NOT NULL attribute with type emailvalue
+ - found NOT NULL attribute with type string
+ - found primary key
+
+Checking table "places"
+ - found attribute with type locationvalue
+ - found attribute with type string, but missing NOT NULL
+ - found primary key
+
+Checking table "repeatingevents"
+ - found NOT NULL foreign key reference to eventinfo
+ - found attribute with type date
+ - found primary key
+
+Checking table "soldtickets"
+ - found NOT NULL foreign key reference to people
+ - found NOT NULL foreign key reference to tickettypes
+ - found NOT NULL foreign key reference to events
+ - found NOT NULL attribute with type integer
+ - found primary key
+
+Checking table "tickettypes"
+ - found NOT NULL foreign key reference to eventinfo
+ - found attribute with type string, but missing NOT NULL
+ - found NOT NULL attribute with type integer
+ - found NOT NULL attribute with type integer
+ - found primary key
+
+Checking table "users"
+ - found NOT NULL foreign key reference to people
+ - found NOT NULL foreign key reference to places
+ - found attribute with type urlvalue
+ - found attribute with type date
+ - found attribute with type gendervalue
+ - found NOT NULL attribute with type string
+ - found all primary key attributes
+
+Checking table "weeklyevents"
+ - found foreign key reference to repeatingevents
+ - found attribute with name frequency
+ - found all primary key attributes
+
+Unexpected Tables
+Table "instanceof" did not match any expected table
+
+Missing Tables
+(none)
+
+
