@@ -1,0 +1,13 @@
+meeting, m1
+meeting, m2
+meeting, m3
+# one binary constraint
+constraint, m2 before m1
+constraint, m1 before m3
+# domain constraints
+domain, m1, mon, hard
+domain, m2, mon, hard
+domain, m3, mon, hard
+domain, m1, late-afternoon, soft
+domain, m2, late-afternoon, soft
+domain, m3, late-afternoon, soft

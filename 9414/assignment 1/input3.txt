@@ -1,0 +1,12 @@
+meeting, m1
+meeting, m2
+meeting, m4
+# one binary constraint
+constraint, m2 before m1
+constraint, m1 one-day-between m4
+# domain constraints
+domain, m1, mon, hard
+domain, m2, mon, hard
+domain, m1, late-afternoon, soft
+domain, m2, late-afternoon, soft
+domain, m4, midday, soft
