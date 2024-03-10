@@ -1,0 +1,185 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+/* Add your styles here */
+
+.signIn{
+    float:left;
+    display: flex;
+    display: block;
+    justify-content:center;
+    min-height: 100vh;
+    width: 100%
+}
+.buttonSub{
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    
+}
+.buttonRet{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
+.label{
+    display: inline-block;
+    font-family: Arial;
+}
+.signInTable{
+    text-align : left;
+}
+
+.registrationTable{
+    text-align : left;
+}
+
+.registration{
+    display: none;
+}
+
+.post {
+    background-color: rgb(247, 173, 173);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.afterLogIn{
+    max-width: 1600px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.userInfoMain{
+    display: inline;
+}
+
+.followList{
+    display: inline;
+    width: auto;
+
+}
+
+.postPart{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    width: auto;
+    
+}
+.userInfoMain{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.Uprofileblock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.userInfoMainContainer{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    min-width: 240px;
+    max-width:250px;
+}
+
+.InputText{
+    width: auto;
+    min-height: 40px ;
+}
+.PostbuttonUp{
+    max-width: 1000px;
+    width: auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.PostbuttonButtom{
+    max-width: 1000px;
+    width: auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.postInput{
+    display: flex;
+    flex-direction: column;
+}
+.postPage{
+    max-width: 1000px;
+    width: auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.phoneUserInfo{
+    width: min-content;
+    height: 100%;
+    display: none;
+}
+.phoneUserInfoReturn{
+    display: none;
+}
+@media all and (max-width: 1000px) {
+    .userInfoMainContainer{
+        display: none;
+    }
+    .phoneUserInfo{
+        display: inline-block;
+    }
+    .phoneUserInfoReturn{
+        display: block;
+    }
+}
