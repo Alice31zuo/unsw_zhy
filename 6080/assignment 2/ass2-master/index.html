@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quickpic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure, you can modify this as much as you choose --> 
+    <header class="banner">
+        <h1>Quickpic</h1>
+        <ul class="nav">
+            <li class="nav-item">Item</li>
+            <li class="nav-item">Item</li>
+        </ul>
+    </header>
+    <main role="main" id="main">
+        <!-- app goes here --> 
+        <!-- <p style="display: none;" id="token"></p> -->
+        <p id="token" style="display: none;"></p> 
+        <div id="test"></div>  <!-- this is use to contain all other part in after login-->
+        <div class="signIn" id="signIn">
+            <table class="signInTable">
+                <tr><th><label class="label">Sign In</label></th></tr>
+                <tr>
+                    <th >
+                        <label for="signInUserName" class="label">UserName</label>
+                    </th>
+                    <th>
+                        <input type="text" id="signInUserName" name="signInUserName" value="Emma" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <label for="signInUserPassword" class="label">Password</label>
+                    </th>
+                    <th>
+                        <input type="password" id="signInUserPassword" name="signInUserPassword" value="taste" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="signInUserPasswordC" class="label">confirm Password</label>
+                    </th>
+                    <th>
+                        <input type="password" id="signInUserPasswordC" name="signInUserPasswordC" value="taste" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" id="signInUserSubmit" name="signInUserSubmit" value="submit" class="buttonSub">
+                    </th>
+                    <th>
+                        <input type="button" id="registrationSubmit" name="registrationSubmit" value="registration" class="buttonRet">
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="registration" id="registration">
+            <table class="registrationTable" id = "registrationTable">
+                <tr><th><label class="label">registration</label></th></tr>
+                <tr>
+                    <th >
+                        <label for="registrationUserName" class="label">UserName</label>
+                    </th>
+                    <th>
+                        <input type="text" id="registrationUserName" name="registrationUserName" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <label for="registrationUserPassword" class="label">Password</label>
+                    </th>
+                    <th>
+                        <input type="password" id="registrationUserPassword" name="registrationUserPassword" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <label for="registrationUserPasswordC" class="label">confirm Password</label>
+                    </th>
+                    <th>
+                        <input type="password" id="registrationUserPasswordC" name="registrationUserPasswordC" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <label for="registrationUserEmail" class="label">Email</label>
+                    </th>
+                    <th>
+                        <input type="email" id="registrationUserEmail" name="registrationUserEmail" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <label for="registrationName" class="label">Name</label>
+                    </th>
+                    <th>
+                        <input type="text" id="registrationName" name="registrationName" class="input">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <input type="button" id="registrationUserSubmit" name="registrationUserSubmit" value="submit" class="buttonSub">
+                    </th>
+                    <th>
+                        <input type="button" id="registrationUserReturn" name="registrationUserReturn" value="return" class="buttonRet">
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="afterLogIn" id="afterLogIn" class="afterLogIn">
+            <div class="userInfoMainContainer" id="userInfoMainContainer">
+                <div  class = "userInfoMain" id="userInfoMain" >
+                    <h3>User information</h3>
+                    <div id="UidPart" class="Uprofileblock"></div>
+                    <div id="UuserNamePart" class="Uprofileblock"></div>
+                    <div id="UuserEmailPart" class="Uprofileblock"></div>
+                    <div id="UuserRnamePart" class="Uprofileblock"></div>
+                    <div id="UuserFnumPart" class="Uprofileblock"></div>
+                </div>
+                <div >
+                    <input type="button" value="return" class="phoneUserInfoReturn" id="phoneUserInfoReturn">
+                </div>
+                <div >
+                    <p>who you what to follow?</p>
+                    <input type="text"  id="followPeopleName">
+                    <input type="button" value="follow" class="buttonChange" id="followPeopleNameSubmit">
+                </div>
+                <div class="followList" id="followList">
+                    <h3>following People</h3>
+                </div>
+            </div>
+            <div id="phoneUserInfoDiv">
+                <input type="button" value="info" class="phoneUserInfo" id="phoneUserInfo">
+            </div>
+            <div calss = "postPart" id="postPart" >
+                <div class="postInput">
+                    <label for="UserPostInput"></label>
+                    <input type="text" id="UserPostInput" name="UserPostInput" class="InputText">
+                    <input type="file" id="UserPostImgInput" name="UserPostImgInput" accept="image/png, image/jpeg,image/jpg ">
+                    <input type="button" id="UserPostSubmit" name="UserPostSubmit" value="submit">
+                </div>
+                <div class="postArea" id="postArea">
+                    <!-- this area need js to add the post -->
+                    <!-- example -->
+                    <div class="postSpec" style="display:none;"> 
+                        <div class="PostbuttonUp">
+                         <input type="button" id="postAuthur" value="authur" class="buttonPost">
+                         <div>TIME</div>
+                         <input type="button" id="postChange" value="Change" class="buttonChange">
+                         <input type="button" id="postDelete" value="Delete" class="buttonChange">
+                        </div>
+                         <div id="postTextSpec">textxxxxxxx</div>
+                         <div id="postImgSpec">imgarea</div>
+                         <div class="PostbuttonButtom">
+                         <input type="button" id="postLike" value="Like" class="buttonChange">
+                         <input type="button" id="postUnLike" value="UnLike" class="buttonChange">
+                         <div>number</div>
+                         <input type="button" id="postComment" value="Comment:xx" class="buttonChange">
+                         </div>
+                    </div>
+                    <div id="psotscontainer"> </div>
+                </div>
+                <div class="postPage" id ="postPage">
+                    <div id = "lastPageContainer" style="display: none;">
+                        <input type="button" id="lastPage" value="last Page" class="buttonChange" >
+                    </div>
+                    <div id="PageNum"></div>
+                    <div id = "nextPageContainer" style="display: none;">
+                        <input type="button" id="nextPage" value="next Page" class="buttonChange" >
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Quickpic</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
